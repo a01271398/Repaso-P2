@@ -30,6 +30,14 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
+    ENV.firebase = {
+      apiKey: "AIzaSyBsgF1O1DS5ZcBEh_f3-Igr7nnwWpXuc0Q",
+      authDomain: "intro-2p-alan.firebaseapp.com",
+      databaseURL: "https://intro-2p-alan.firebaseio.com",
+      projectId: "intro-2p-alan",
+      storageBucket: "intro-2p-alan.appspot.com",
+      messagingSenderId: "308913714303"
+    };
   }
 
   if (environment === 'test') {

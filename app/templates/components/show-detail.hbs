@@ -1,0 +1,30 @@
+<div align='center'>
+    <form {{action 'save' on='submit'}}>
+        <div class="row">
+            <div class="col-lg-6">
+                <h6>Nombre</h6>
+            </div>
+            <div class="col-lg-6">
+                <h6>Fecha</h6>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                {{input type='text' class="form-control" value=test.nombre}}
+            </div>
+            <div class="col-lg-6">
+                {{input type='date' class="form-control" value=test.fecha}}
+            </div>
+        </div>
+        <br>
+        <button type="button" class="btn btn-secondary" {{action 'createQuestion'}}>Crear Pregunta</button>
+        <button class="btn btn-success">Guardar</button>
+    </form>
+</div>
+    <hr>
+{{#each test.preguntas as |p|}}
+    {{question-layout preguntas=p}}
+    <br>
+{{/each}}
+    <br>
+    {{saved-question}}

@@ -1,0 +1,7 @@
+<div class='container'>
+    {{#each model as |test|}}
+        {{test-layout test=test}}
+    {{/each}}
+    <hr>
+    <button{{action 'nuevo'}}>Nuevo examen</button>
+</div>
